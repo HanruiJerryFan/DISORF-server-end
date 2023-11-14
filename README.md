@@ -1,9 +1,10 @@
 # Remote End of DISORF
-DISORF aims to train NeRF for 3d reconstruction in real-time. It uses distributed architecture so that the whole NeRF-SLAM system is divided into the SLAM part for collecting posed images and the NeRF training and visualization part. In this way, By designing specialized local-end for embedded devices like Jetson, we allow resource-constrained devices to leverage power of NeRF. This repository contains remote-end. It is developed upon nerfbridge (https://github.com/javieryu/nerf_bridge).
+DISORF aims to train NeRF for 3d reconstruction in real-time. It uses distributed architecture so that the whole NeRF-SLAM system is divided into the SLAM part for collecting posed images and the NeRF training and visualization part. In this way, By designing specialized local-end for embedded devices like Jetson, we allow resource-constrained devices to leverage power of NeRF. This repository contains remote-end.
 
 ### Requirements
 - A computer with Ubuntu 20.04
 - ROS Noetic
+- Nvidia GPU
 
 ### Installation  
 We provide a script, setup_server_end.sh, to install and configure all dependencies. It will automatically create conda environment, install dependencies of Nerfstudio, and install ROS noetic. Use it with
